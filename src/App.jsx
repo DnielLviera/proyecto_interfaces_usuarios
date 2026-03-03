@@ -6,8 +6,8 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <main className='font-Rubik flex justify-center bg-bg-dark h-dvh'>
-      <section className=' my-5 p-1'>
+    <main className='font-Rubik flex justify-center bg-bg-dark h-full'>
+      <section className=' mt-5 pt-1'>
         <Hero />
         <CardContainers />
         <Footer />
