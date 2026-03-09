@@ -57,7 +57,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile sidebar */}
-      <ResponsiveMenu />
+      <ResponsiveMenu open={open}/>
     </>
   )
 }
