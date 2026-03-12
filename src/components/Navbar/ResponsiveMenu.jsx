@@ -1,7 +1,11 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const ResponsiveMenu = ({ open }) => {
+const ResponsiveMenu = ({ open, onClose }) => {
+
+  const handleLinkClick = () => {
+    onClose();
+  }
   return (
     <AnimatePresence mode='wait'>
       {open && (
@@ -13,8 +17,8 @@ const ResponsiveMenu = ({ open }) => {
         >
           <div className='text-xl font-semibold uppercase bg-accent-dark text-white py-10 m-6 rounded-3xl'>
             <ul className='flex flex-col justify-center items-center gap-10'>
-              <li>Home</li>
-              <li>Products</li>
+              <li><a href="#" onClick={handleLinkClick}>Home</a></li>
+              <li><a href="#" onClick={handleLinkClick}>Products</a></li>
             </ul>
           </div>
         </motion.div>

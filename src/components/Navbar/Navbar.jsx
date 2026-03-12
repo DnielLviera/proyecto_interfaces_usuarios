@@ -57,7 +57,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile sidebar */}
-      <ResponsiveMenu open={open}/>
+      <ResponsiveMenu open={open} onClose={() => setOpen(false)}/>
     </>
   )
 }
